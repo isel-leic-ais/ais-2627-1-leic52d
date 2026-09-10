@@ -1,6 +1,13 @@
-hello: hello.c
-	gcc -o hello -g -Wall hello.c
+all: stat ls file
+
+stat: stat.c
+	gcc -o stat -g -Wall stat.c
+
+ls: ls.c
+	gcc -o ls -g -Wall ls.c
+
+file: file.c
+	gcc -o file -g -Wall file.c
 
 clean:
-	rm hello
-    
+	rm stat ls file
