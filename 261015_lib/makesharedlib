@@ -1,0 +1,8 @@
+libdemo.so: stack_pic.o fifo_pic.o
+	gcc -shared -o libdemo.so stack_pic.o fifo_pic.o
+
+stack_pic.o: stack.c
+	gcc -g -Og -c -fpic stack.c -o stack_pic.o
+
+fifo_pic.o: fifo.c
+	gcc -g -Og -c -fpic fifo.c -o fifo_pic.o
