@@ -1,15 +1,7 @@
-#include <stdio.h>
+all: mem_child
 
-struct example {
-	int	a;
-	char	b;
-	short	c;
-};
-
-
-struct axample x;
-
-int main()
-{
-	printf("sizeof x = %ld", sizeof x);
-}
+mem_child: mem_child.c
+	gcc -o mem_child -g -Wall mem_child.c
+	
+clean:
+	rm mem_child
