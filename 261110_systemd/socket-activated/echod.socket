@@ -1,0 +1,11 @@
+[Unit]
+Description=Echo service activation socket
+
+[Socket]
+ListenStream=/opt/echod/server.sock
+SocketMode=0666
+SocketUser=ezequiel
+SocketGroup=ezequiel
+
+[Install]
+WantedBy=sockets.target

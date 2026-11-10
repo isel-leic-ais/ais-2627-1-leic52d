@@ -1,0 +1,11 @@
+[Unit]
+Description=Echo service
+
+[Service]
+ExecStart=/opt/echod/server
+Restart=always
+User=ezequiel
+Group=ezequiel
+
+[Install]
+WantedBy=multi-user.target
