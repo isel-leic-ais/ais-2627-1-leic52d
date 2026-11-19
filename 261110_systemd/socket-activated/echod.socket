@@ -4,8 +4,8 @@ Description=Echo service activation socket
 [Socket]
 ListenStream=/opt/echod/server.sock
 SocketMode=0666
-SocketUser=ezequiel
-SocketGroup=ezequiel
+SocketUser=isel
+SocketGroup=isel
 
 [Install]
 WantedBy=sockets.target

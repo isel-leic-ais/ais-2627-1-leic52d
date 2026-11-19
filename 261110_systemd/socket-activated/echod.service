@@ -6,8 +6,8 @@ After=echod.socket
 [Service]
 ExecStart=/opt/echod/server
 Restart=always
-User=ezequiel
-Group=ezequiel
+User=isel
+Group=isel
 
 [Install]
 WantedBy=multi-user.target
